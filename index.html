@@ -803,7 +803,7 @@ window.addEventListener('scroll', () => {
 /* ── COUNT-UP ── */
 function countUp(el, target, prefix, suffix, dur) {
   let s=0; const step=target/(dur/16);
-  const fmt=n=>{ if(target>=1000) return prefix+Math.round(n/1000)+'K'+suffix; return prefix+Math.round(n)+suffix; };
+  const fmt=n=>{ return prefix+Math.round(n/1000)+'K'; };
   const tick=()=>{ s=Math.min(s+step,target); el.textContent=fmt(s); if(s<target) requestAnimationFrame(tick); };
   tick();
 }
