@@ -758,7 +758,7 @@ const ctx = canvas.getContext('2d');
 let W, H, pts = [];
 function resize() {
   const h = canvas.parentElement;
-  W = canvas.width = h.offsetWidth;
+  W = canvas.width = h.clientWidth;
   H = canvas.height = h.offsetHeight;
   pts = [];
   const cols = Math.ceil(W/70), rows = Math.ceil(H/70);
