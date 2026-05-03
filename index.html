@@ -407,6 +407,37 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:3rem 2.5r
   .hero-stats{gap:2rem;}
   .hero-title{font-size:clamp(40px,12vw,64px);}
 }
+  .org-names {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+.person {
+  text-align: center;
+  width: 150px;
+}
+
+.person img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.person strong {
+  display: block;
+  font-size: 14px;
+}
+
+.person span {
+  font-size: 12px;
+  color: gray;
+}
 </style>
 </head>
 <body>
@@ -433,10 +464,10 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:3rem 2.5r
   <h1 class="hero-title">WinnovX<br><span class="grad">HackFest 2026</span></h1>
   <p class="hero-sub">A National Level Hackathon — Innovate. Empower. Excel.</p>
   <div class="hero-meta">
-    <div class="hero-meta-item">📅 5th &amp; 6th June 2026</div>
+    <div class="hero-meta-item">📅 12th &amp; 13th June 2026</div>
     <div class="hero-meta-item">📍 Stanley College, Hyderabad</div>
     <div class="hero-meta-item">💰 ₹300 per participant</div>
-    <div class="hero-meta-item">🔖 Last date: 1st June</div>
+    <div class="hero-meta-item">🔖 Last date: 5th June</div>
   </div>
   <div class="hero-btns">
     <a class="btn-primary" href="https://forms.gle/etPAUXp51GGLSR367" target="_blank">Register Now →</a>
@@ -593,12 +624,39 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:3rem 2.5r
     <div class="org-grid">
       <div class="org-box spot-card reveal-left">
         <div class="org-label">Chief Patrons &amp; Patrons</div>
-        <ul class="org-names">
-          <li><strong>Sri. K. Krishna Rao</strong> — Chief Patron</li>
-          <li><strong>Mr. T. Rakesh Reddy</strong> — Chief Patron</li>
-          <li><strong>Dr. B. L. Raju</strong> — Patron</li>
-          <li><strong>Dr. A. Vinaya Babu</strong> — Patron</li>
-          <li><strong>Dr. Satya Prasad Lanka</strong> — Patron</li>
+      <ul class="org-names">
+  
+  <li class="person">
+    <img src="images/krishna_rao.jpg" alt="Sri K. Krishna Rao">
+    <strong>Sri. K. Krishna Rao</strong>
+    <span>Chief Patron</span>
+  </li>
+
+  <li class="person">
+    <img src="images/rakesh_reddy.jpg" alt="Mr. T. Rakesh Reddy">
+    <strong>Mr. T. Rakesh Reddy</strong>
+    <span>Chief Patron</span>
+  </li>
+
+  <li class="person">
+    <img src="https://media.licdn.com/dms/image/v2/D5603AQHk-UL3JGpuRw/profile-displayphoto-scale_400_400/B56Z1kEP9AKYAg-/0/1775500330643?e=1779321600&v=beta&t=ZmsovDjl5O7bmZQ3xTQV9N-BojheeG5NXjkMrrDLpl8" alt="Dr. B. L. Raju">
+    <strong>Dr. B. L. Raju</strong>
+    <span>Patron</span>
+  </li>
+
+  <li class="person">
+    <img src="images/vinaya_babu.jpg" alt="Dr. A. Vinaya Babu">
+    <strong>Dr. A. Vinaya Babu</strong>
+    <span>Patron</span>
+  </li>
+
+  <li class="person">
+    <img src="images/satya_prasad.jpg" alt="Dr. Satya Prasad Lanka">
+    <strong>Dr. Satya Prasad Lanka</strong>
+    <span>Patron</span>
+  </li>
+
+</ul>
         </ul>
       </div>
       <div class="org-box spot-card violet reveal-right">
